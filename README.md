@@ -5,7 +5,7 @@ Working with OSPF , EIGRP , IBGP , EBGP , IpSec , GRE , Static Routes
 
 
 
-<img src="https://github.com/rwldrn/johnny-five/raw/master/assets/sgier-johnny-five.png">
+<img src="https://github.com/mrmb/CCNP-Topology/blob/master/topology.png">
 
 
 #### CCNP Topology, developed at [GNS3](http://www.gns3.net/).
@@ -21,7 +21,7 @@ At the topology, i have used many different kind of tools you have learned on CC
 - EIGRP
 - IBGP
 - EBGP
-- Statis Routes
+- Static Routes
 - Tunnel GRE
 - Vpn IpSec
 - SLA
@@ -31,12 +31,6 @@ At the topology, i have used many different kind of tools you have learned on CC
 - NAT
 
 
-## Guidance
-Not yet
-
 ## Developer
 	Marvin Mendez	@mrm3101
 
-
-## Release History
-_(Nothing yet)_
