@@ -1,12 +1,8 @@
 CCNP-Topology
 =============
-
 Working with OSPF , EIGRP , IBGP , EBGP , IpSec , GRE , Static Routes 
 
-
-
-<img src="https://github.com/mrmb/CCNP-Topology/blob/master/topology.png">
-
+<img src="https://raw.githubusercontent.com/mrmb/CCNP-Topology/master/topology.png">
 
 #### CCNP Topology, developed at [GNS3](http://www.gns3.net/).
 
