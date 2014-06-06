@@ -1,0 +1,342 @@
+autostart = False
+version = 0.8.6
+[127.0.0.1:7202]
+    workingdir = /tmp
+    udp = 10201
+    [[3745]]
+        image = /Users/Mrm/Developer/Cisco/OS1/c3745-adventerprisek9-mz.124-25d.image
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R12]]
+        model = 3745
+        console = 2113
+        aux = 2513
+        cnfg = R12.cfg
+        f0/0 = R8 f0/0
+        x = -720.0
+        y = -44.0
+        z = 1.0
+[127.0.0.1:7200]
+    workingdir = /tmp
+    udp = 10001
+    [[3745]]
+        image = /Users/Mrm/Developer/Cisco/OS1/c3745-adventerprisek9-mz.124-25d.image
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R5]]
+        model = 3745
+        console = 2105
+        aux = 2505
+        cnfg = R5.cfg
+        slot1 = NM-4T
+        s1/0 = R1 s1/3
+        s1/1 = R8 s1/2
+        x = -327.0
+        y = 61.0
+        z = 1.0
+    [[ROUTER R6]]
+        model = 3745
+        console = 2106
+        aux = 2506
+        cnfg = R6.cfg
+        f0/0 = R11 f0/0
+        slot1 = NM-4T
+        s1/0 = R3 s1/2
+        x = 281.0
+        y = -43.0
+        z = 1.0
+    [[ROUTER R7]]
+        model = 3745
+        console = 2107
+        aux = 2507
+        cnfg = R7.cfg
+        slot1 = NM-4T
+        s1/0 = R1 s1/2
+        s1/1 = R8 s1/1
+        x = -335.0
+        y = -155.0
+        z = 1.0
+    [[ROUTER R1]]
+        model = 3745
+        console = 2101
+        aux = 2501
+        cnfg = R1.cfg
+        slot1 = NM-4T
+        s1/0 = R2 s1/0
+        s1/1 = R9 s1/1
+        s1/2 = R7 s1/0
+        s1/3 = R5 s1/0
+        x = -203.0
+        y = -40.0
+        z = 1.0
+    [[ROUTER R2]]
+        model = 3745
+        console = 2102
+        aux = 2502
+        cnfg = R2.cfg
+        f0/0 = nio_gen_eth:en0
+        slot1 = NM-4T
+        s1/0 = R1 s1/0
+        s1/1 = R3 s1/1
+        x = -65.6776695297
+        y = -198.636038969
+        z = 1.0
+    [[ROUTER R3]]
+        model = 3745
+        console = 2103
+        aux = 2503
+        cnfg = R3.cfg
+        slot1 = NM-4T
+        s1/0 = R10 s1/0
+        s1/1 = R2 s1/1
+        s1/2 = R6 s1/0
+        x = 99.0
+        y = -55.0
+        z = 1.0
+    [[ROUTER R11]]
+        model = 3745
+        console = 2112
+        aux = 2512
+        cnfg = R11.cfg
+        f0/0 = R6 f0/0
+        x = 450.0
+        y = -43.0
+        z = 1.0
+    [[ROUTER R8]]
+        model = 3745
+        console = 2108
+        aux = 2508
+        cnfg = R8.cfg
+        f0/0 = R12 f0/0
+        slot1 = NM-4T
+        s1/1 = R7 s1/1
+        s1/2 = R5 s1/1
+        x = -451.0
+        y = -43.0
+        z = 1.0
+[127.0.0.1:7201]
+    workingdir = /tmp
+    udp = 10101
+    [[3745]]
+        image = /Users/Mrm/Developer/Cisco/OS1/c3745-adventerprisek9-mz.124-25d.image
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R9]]
+        model = 3745
+        console = 2109
+        aux = 2509
+        cnfg = R9.cfg
+        slot1 = NM-4T
+        s1/1 = R1 s1/1
+        s1/2 = R10 s1/2
+        x = -135.0
+        y = 109.0
+        z = 1.0
+    [[ROUTER R10]]
+        model = 3745
+        console = 2110
+        aux = 2510
+        cnfg = R10.cfg
+        slot1 = NM-4T
+        s1/0 = R3 s1/0
+        s1/2 = R9 s1/2
+        x = 32.0
+        y = 116.0
+        z = 1.0
+[GNS3-DATA]
+    configs = .
+    m11 = 0.999999999998
+    m22 = 0.999999999998
+    [[NOTE 1]]
+        text = "10.10.4.0"
+        x = -282.0
+        y = -57.0
+    [[NOTE 2]]
+        text = ".2"
+        x = 12.1147904139
+        y = 144.722871428
+    [[NOTE 3]]
+        text = "R6\nTunel 0 [ GRE ]\nRed 10.10.12.0 \nIp 10.10.12.2\n\nLo 10.10.30.1"
+        x = 369.000000001
+        y = 43.0000000001
+    [[NOTE 4]]
+        text = ".1"
+        x = -407.0
+        y = 5.0
+    [[NOTE 5]]
+        text = ".1"
+        x = 165.0
+        y = -61.0
+    [[NOTE 6]]
+        text = ".2"
+        x = -258.0
+        y = 66.0
+    [[NOTE 7]]
+        text = ".2"
+        x = 427.0
+        y = -49.0
+    [[NOTE 8]]
+        text = ".1"
+        x = -200.0
+        y = 20.0
+    [[NOTE 9]]
+        text = "10.10.7.0"
+        x = -116.829906421
+        y = 35.8614357139
+    [[NOTE 10]]
+        text = ".2"
+        x = -354.0
+        y = 61.0
+    [[NOTE 11]]
+        text = ".2"
+        x = 7.87214972671
+        y = -163.906637612
+    [[NOTE 12]]
+        text = "200.0.1.0"
+        x = -95.0445891527
+        y = -89.2111113946
+    [[NOTE 13]]
+        text = ".1"
+        x = 128.683332909
+        y = -7.68629150099
+    [[NOTE 14]]
+        text = ".1"
+        x = -171.95836944
+        y = 7.94974746832
+    [[NOTE 15]]
+        text = ".2"
+        x = -143.448701448
+        y = 89.8406204337
+    [[NOTE 16]]
+        text = ".1"
+        x = -62.2354980119
+        y = 132.119841048
+    [[NOTE 17]]
+        text = "10.10.9.0"
+        x = -41.8765876149
+        y = 90.1076477386
+    [[NOTE 18]]
+        text = "OSPF  1\nArea    0\nAS 6500\n\nEIGRP 10"
+        x = -331.920310217
+        y = -281.464466094
+    [[NOTE 19]]
+        text = "10.10.2.0"
+        x = 374.0
+        y = -71.0
+    [[NOTE 20]]
+        text = "AS 5002"
+        x = -59.3969696198
+        y = -252.244732729
+    [[NOTE 21]]
+        text = "R2\nIpSec \nL0 10.10.11.0"
+        x = 123.000000001
+        y = -208.0
+    [[NOTE 22]]
+        text = ".1"
+        x = -135.23906935
+        y = -65.7365440327
+    [[NOTE 23]]
+        text = "R3\nTunel 0 [ IpSec ]\nRed 172.10.0.0 \nIp 172.10.0.1\nLo 200.0.3.0"
+        x = 220.0
+        y = 44.0000000002
+    [[NOTE 24]]
+        text = "Info\n  Access List 100 = NAT "
+        x = 309.000000001
+        y = -290.000000001
+    [[NOTE 25]]
+        text = ".1"
+        x = 98.1061684425
+        y = -78.6654762208
+    [[NOTE 26]]
+        text = "R8\nTunel 0 [ GRE ]\nRed 172.10.0.0\nIp 172.10.0.1\n\nLo 10.10.40.1"
+        x = -509.000000001
+        y = -272.0
+    [[NOTE 27]]
+        text = "10.10.6.0"
+        x = -283.0
+        y = 0.0
+    [[NOTE 28]]
+        text = ".2"
+        x = -81.223304703
+        y = -156.329473146
+    [[NOTE 29]]
+        text = ".2"
+        x = 84.9467888762
+        y = 86.6101730554
+    [[NOTE 30]]
+        text = "Rutas estaticas"
+        x = 284.0
+        y = -107.0
+    [[NOTE 31]]
+        text = ".1"
+        x = -406.0
+        y = -71.0
+    [[NOTE 32]]
+        text = "10.10.3.0"
+        x = -413.0
+        y = -114.0
+    [[NOTE 33]]
+        text = ".1"
+        x = -474.0
+        y = -45.0
+    [[NOTE 34]]
+        text = "10.10.8.0"
+        x = 35.7853172683
+        y = 17.1614716076
+    [[NOTE 35]]
+        text = ".1"
+        x = 357.0
+        y = -47.0
+    [[NOTE 36]]
+        text = "AS 5001"
+        x = 241.000000001
+        y = -132.0
+    [[NOTE 37]]
+        text = ".2"
+        x = -347.0
+        y = -119.0
+    [[NOTE 38]]
+        text = ".2"
+        x = 265.0
+        y = -43.0
+    [[NOTE 39]]
+        text = "10.10.5.0"
+        x = -418.0
+        y = 46.0
+    [[NOTE 40]]
+        text = "R1\nIpSec \nL0 10.10.10.0"
+        x = -211.0
+        y = -208.0
+    [[NOTE 41]]
+        text = "10.10.1.0"
+        x = 192.0
+        y = -77.0
+    [[NOTE 42]]
+        text = ".2"
+        x = -641.0
+        y = -43.0
+    [[NOTE 43]]
+        text = "10.10.14.0"
+        x = -583.0
+        y = -63.0
+    [[NOTE 44]]
+        text = "200.0.2.0"
+        x = 5.9554108475
+        y = -85.2111113946
+    [[NOTE 45]]
+        text = "IBGP\nAS 5003"
+        x = -41.6101730554
+        y = 168.286363289
+    [[NOTE 46]]
+        text = ".1"
+        x = -201.0
+        y = -62.0
+    [[NOTE 47]]
+        text = ".2"
+        x = -259.0
+        y = -124.0
+    [[Cloud C4]]
+        x = 47.5000000003
+        y = -325.000000001
+        z = 1.0
+        connections = R2:f0/0:nio_gen_eth:en0
